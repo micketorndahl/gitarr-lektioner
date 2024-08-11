@@ -1,0 +1,142 @@
+/* General Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #333;
+  background: url("images/texture-bg.jpg");
+  font-family: "Roboto", sans-serif;
+  background-size: cover;
+  background-attachment: fixed;
+  max-width: 100%;
+  margin: auto;
+}
+
+/* Navbar Styles */
+nav {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 1rem 0;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.3); /* semi-transparent background */
+  backdrop-filter: blur(10px); /* blur effect */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* light border */
+  z-index: 10;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-list li {
+  margin: 0 1.5rem;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.nav-list a:hover {
+  color: red;
+  opacity: 0.8;
+}
+
+/* Banner Styles */
+.banner {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.banner img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+}
+
+.banner h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.tabs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  padding: 0.2rem;
+}
+
+/* Video Section */
+.video-container {
+  padding: 2rem;
+  text-align: center;
+  max-width: 800px;
+  margin: 2rem auto;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Video Section */
+.video-container {
+  padding: 2rem;
+  text-align: center;
+  max-width: 800px;
+  margin: 2rem auto;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.video-container h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+video {
+  border-radius: 1rem;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
+  /* Adjust the height while maintaining the aspect ratio */
+  max-height: 400px; /* Set your desired max height */
+  width: 100%;
+  object-fit: cover; /* Ensure the video fits within the given height */
+}
+
+@media (max-width: 768px) {
+  .nav-list li {
+    margin: 0 1rem;
+  }
+
+  .banner h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-list li {
+    margin: 0 1rem;
+  }
+
+  .banner h1 {
+    font-size: 2rem;
+  }
+}
